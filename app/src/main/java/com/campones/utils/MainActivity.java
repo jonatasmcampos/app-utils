@@ -1,16 +1,14 @@
 package com.campones.utils;
 
-import androidx.appcompat.app.ActionBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-
+import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Toolbar;
+import android.view.View;
 
 import com.campones.utils.models.Imagem;
-
 import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
@@ -27,6 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
         setImagem();
         setAdapter();
+    }
+
+    public void irParaZoom(View view){
+        Intent zoomIntent = new Intent(this, ZoomActivity.class);
+        startActivity(zoomIntent);
     }
 
     public void setAdapter(){

@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class ZoomActivity extends AppCompatActivity {
 
@@ -13,11 +14,10 @@ public class ZoomActivity extends AppCompatActivity {
         setContentView(R.layout.activity_zoom);
     }
 
-    @Override
-    protected void onStart() {
-        super.onStart();
+    public void irParaHome(View view){
         Intent intentHome = new Intent(this, MainActivity.class);
         startActivity(intentHome);
     }
+
 
 }
