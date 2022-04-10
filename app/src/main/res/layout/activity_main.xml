@@ -62,83 +62,134 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/ivBanner" />
 
-
         <!--  Imagem e texto zoom  -->
 
-        <ImageView
-            android:id="@+id/ivZoom"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginStart="64dp"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvZoom"
+            app:cardCornerRadius="16dp"
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:onClick="irParaZoom"
             android:layout_marginTop="16dp"
-            android:contentDescription="Icone do zoom"
-            android:onClick="irParaZoom"
-            android:src="@drawable/icon_zoom"
-            app:layout_constraintEnd_toStartOf="@id/tvZoom"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tvFerramentasDigitais" />
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvFerramentasDigitais">
 
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:background="@drawable/card_border">
 
-        <TextView
-            android:id="@+id/tvZoom"
-            android:layout_width="wrap_content"
+                <ImageView
+                    android:id="@+id/ivZoom"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Icone do zoom"
+                    android:src="@drawable/icon_zoom" />
+                <TextView
+                    android:id="@+id/tvZoom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="64dp"
+                    android:layout_gravity="center_vertical"
+                    android:letterSpacing="0.1"
+                    android:text="ZOOM"
+                    android:textSize="16sp"/>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvGmeet"
+            app:cardCornerRadius="16dp"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:layout_marginStart="32dp"
-            android:letterSpacing="0.1"
-            android:onClick="irParaZoom"
-            android:text="ZOOM"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/ivZoom"
-            app:layout_constraintStart_toEndOf="@id/ivZoom"
-            app:layout_constraintTop_toTopOf="@id/ivZoom" />
-
-        <!--  Imagem e texto Google meet  -->
-        <ImageView
-            android:id="@+id/ivGmeet"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
-            android:layout_marginTop="8dp"
+            android:clickable="true"
             android:onClick="irParaGoogleMeet"
-            android:contentDescription="Icone do google meet"
-            android:src="@drawable/icon_gmeet"
-            app:layout_constraintStart_toStartOf="@id/ivZoom"
-            app:layout_constraintTop_toBottomOf="@id/ivZoom" />
+            android:layout_marginTop="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvZoom">
 
-        <TextView
-            android:id="@+id/tvGmeet"
-            android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:background="@drawable/card_border">
+
+                <ImageView
+                    android:id="@+id/ivGmeet"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Icone do google meet"
+                    android:src="@drawable/icon_gmeet"
+                    />
+
+                <TextView
+                    android:id="@+id/tvGmeet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:text="GOOGLE MEET"
+                    android:layout_marginStart="32dp"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvMteams"
+            android:layout_width="280dp"
             android:layout_height="wrap_content"
-            android:letterSpacing="0.1"
-            android:text="GOOGLE MEET"
-            android:onClick="irParaGoogleMeet"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/ivGmeet"
-            app:layout_constraintStart_toStartOf="@id/tvZoom"
-            app:layout_constraintTop_toTopOf="@id/ivGmeet" />
-
-        <!--  Imagem e texto microsoft teams  -->
-        <ImageView
-            android:id="@+id/ivMteams"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:clickable="true"
+            android:layout_marginTop="16dp"
             android:onClick="irParaMicrosoftTeams"
-            android:layout_marginTop="8dp"
-            android:contentDescription="Icone do microsoft teams"
-            android:src="@drawable/icon_mteams"
-            app:layout_constraintStart_toStartOf="@+id/ivGmeet"
-            app:layout_constraintTop_toBottomOf="@id/ivGmeet" />
+            app:cardCornerRadius="16dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cvGmeet">
 
-        <TextView
-            android:id="@+id/tvMteams"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:letterSpacing="0.1"
-            android:text="MICROSOFT TEAMS"
-            android:onClick="irParaMicrosoftTeams"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="@id/ivMteams"
-            app:layout_constraintStart_toStartOf="@id/tvZoom"
-            app:layout_constraintTop_toTopOf="@id/ivMteams" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="16dp"
+                android:paddingVertical="8dp"
+                android:background="@drawable/card_border">
+
+                <ImageView
+                    android:id="@+id/ivMteams"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_gravity="center_vertical"
+                    android:contentDescription="Icone do microsoft teams"
+                    android:src="@drawable/icon_mteams" />
+
+                <TextView
+                    android:id="@+id/tvMteams"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:letterSpacing="0.1"
+                    android:layout_marginStart="16dp"
+                    android:layout_gravity="center_vertical"
+                    android:text="MICROSOFT TEAMS"
+                    android:textSize="16sp" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+<!--        &lt;!&ndash;  Imagem e texto microsoft teams  &ndash;&gt;-->
+
 
         <!--  Ferramentas google  -->
         <TextView
@@ -149,7 +200,7 @@
             android:text="Ferramentas google"
             android:textSize="16sp"
             app:layout_constraintStart_toStartOf="@id/tvFerramentasDigitais"
-            app:layout_constraintTop_toBottomOf="@id/ivMteams" />
+            app:layout_constraintTop_toBottomOf="@id/cvMteams" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recyclerView"
@@ -157,7 +208,7 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="50dp"
             android:layout_marginVertical="32dp"
-            android:background="?attr/colorSecondaryVariant"
+            android:background="@drawable/card_border_recyclerview"
             android:padding="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
