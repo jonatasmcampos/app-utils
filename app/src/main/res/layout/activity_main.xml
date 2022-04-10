@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        android:layout_height="match_parent">
 
         <include
             android:id="@+id/toolbar"
@@ -97,6 +98,7 @@
             android:layout_width="60dp"
             android:layout_height="60dp"
             android:layout_marginTop="8dp"
+            android:onClick="irParaGoogleMeet"
             android:contentDescription="Icone do google meet"
             android:src="@drawable/icon_gmeet"
             app:layout_constraintStart_toStartOf="@id/ivZoom"
@@ -108,6 +110,7 @@
             android:layout_height="wrap_content"
             android:letterSpacing="0.1"
             android:text="GOOGLE MEET"
+            android:onClick="irParaGoogleMeet"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@id/ivGmeet"
             app:layout_constraintStart_toStartOf="@id/tvZoom"
@@ -118,6 +121,7 @@
             android:id="@+id/ivMteams"
             android:layout_width="60dp"
             android:layout_height="60dp"
+            android:onClick="irParaMicrosoftTeams"
             android:layout_marginTop="8dp"
             android:contentDescription="Icone do microsoft teams"
             android:src="@drawable/icon_mteams"
@@ -130,6 +134,7 @@
             android:layout_height="wrap_content"
             android:letterSpacing="0.1"
             android:text="MICROSOFT TEAMS"
+            android:onClick="irParaMicrosoftTeams"
             android:textSize="16sp"
             app:layout_constraintBottom_toBottomOf="@id/ivMteams"
             app:layout_constraintStart_toStartOf="@id/tvZoom"
@@ -159,6 +164,22 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/tvFerramentasGoogle" />
 
+        <ImageView
+            android:id="@+id/setaEsquerda"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_seta_e"
+            android:layout_marginStart="8dp"
+            app:layout_constraintTop_toBottomOf="@id/recyclerView"
+            app:layout_constraintStart_toStartOf="@id/recyclerView"/>
+        <ImageView
+            android:id="@+id/setaDireita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_seta_d"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintTop_toBottomOf="@id/recyclerView"
+            app:layout_constraintEnd_toEndOf="@id/recyclerView"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

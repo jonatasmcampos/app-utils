@@ -31,6 +31,14 @@ public class MainActivity extends AppCompatActivity {
         Intent zoomIntent = new Intent(this, ZoomActivity.class);
         startActivity(zoomIntent);
     }
+    public void irParaGoogleMeet(View view){
+        Intent zoomIntent = new Intent(this, GoogleMeetActivity.class);
+        startActivity(zoomIntent);
+    }
+    public void irParaMicrosoftTeams(View view){
+        Intent zoomIntent = new Intent(this, MicrosoftTeamsActivity.class);
+        startActivity(zoomIntent);
+    }
 
     public void setAdapter(){
         RecyclerViewAdapter adapter = new RecyclerViewAdapter(listaImagem);

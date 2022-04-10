@@ -6,41 +6,48 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".ZoomActivity">
+    tools:context=".GoogleMeetActivity">
 
     <include
         android:id="@+id/toolbar"
         layout="@layout/toolbar" />
 
     <ImageView
-        android:id="@+id/ivZoomComName"
-        android:layout_width="60dp"
-        android:layout_height="60dp"
+        android:id="@+id/ivGmeetComName"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginVertical="32dp"
-        android:contentDescription="Icone do zoom"
-        android:src="@drawable/icon_zoom_nome" />
+        android:contentDescription="Icone do Google Meet"
+        android:src="@drawable/icon_gmeet_nome" />
 
     <TextView
-        android:id="@+id/tvDescricao"
+        android:id="@+id/tvDescricaoGmeet"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="16dp"
-        android:text="Fornece serviços de vídeocomunicação e chat online, é usado para teleconferência, trabalho à distância, educação à distância e relações sociais."
+        android:text="O Google Meet é um serviço de videocomunicação. Conecte-se, colabore e celebre com segurança de qualquer lugar."
         android:textAlignment="center"
         android:layout_marginBottom="16dp"
         android:textSize="16sp" />
 
     <Button
-        android:id="@+id/btnCapacitacaoZoom"
+        android:id="@+id/btnCursoTreinamentoGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Capacitação Zoom" />
+        android:text="Curso de treinamento" />
 
     <Button
-        android:id="@+id/btnCentralAjudaZoom"
+        android:id="@+id/btnTutorialPDF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="Tutorial PDF" />
+
+    <Button
+        android:id="@+id/btnCentralAjudaGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
@@ -56,7 +63,7 @@
         android:background="?attr/colorPrimary" />
 
     <TextView
-        android:id="@+id/tvSaibacomo"
+        android:id="@+id/tvSaibacomoGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Saiba como: "
@@ -65,65 +72,56 @@
         android:layout_marginStart="16dp"/>
 
     <TextView
-        android:id="@+id/tvCriarR"
+        android:id="@+id/tvCriarRGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Criar reunião."
         android:textSize="16sp"
-        android:drawableStart="@drawable/ic_add"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"/>
+        android:layout_marginStart="32dp"
+        app:drawableStartCompat="@drawable/ic_add" />
 
     <TextView
-        android:id="@+id/tvAgendarR"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text=" Agendar reunião."
-        android:textSize="16sp"
-        android:drawableStart="@drawable/ic_agendar"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"/>
-
-    <TextView
-        android:id="@+id/tvIngressarR"
+        android:id="@+id/tvIngressarRGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Ingressar em uma reunião."
         android:textSize="16sp"
-        android:drawableStart="@drawable/ic_ingressar"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"/>
+        android:layout_marginStart="32dp"
+        app:drawableStartCompat="@drawable/ic_ingressar" />
 
     <TextView
-        android:id="@+id/tvGravarR"
+        android:id="@+id/tvGravarRGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Gravar uma reunião."
         android:textSize="16sp"
-        android:drawableStart="@drawable/ic_gravar"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"/>
+        android:layout_marginStart="32dp"
+        app:drawableStartCompat="@drawable/ic_gravar" />
 
     <TextView
-        android:id="@+id/tvConvidarR"
+        android:id="@+id/tvConvidarRGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text=" Convidar pessoas para uma reunião."
         android:textSize="16sp"
-        android:drawableStart="@drawable/ic_convidar"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"/>
+        android:layout_marginStart="32dp"
+        app:drawableStartCompat="@drawable/ic_convidar" />
 
     <TextView
-        android:id="@+id/tvControleA"
+        android:id="@+id/tvCompartilharTelaGmeet"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text=" Controles do anfitrião."
+        android:text=" Compartilhar tela em uma reunião."
         android:textSize="16sp"
-        android:drawableStart="@drawable/ic_controle"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"/>
+        android:layout_marginStart="32dp"
+        app:drawableStartCompat="@drawable/ic_compartilhar_tela" />
 
+        <!-- VOLTAR PARA VIEW HOME   -->
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="50dp"
         android:layout_height="50dp"
@@ -133,6 +131,5 @@
         android:onClick="irParaHome"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="16dp"/>
-
 
 </LinearLayout>

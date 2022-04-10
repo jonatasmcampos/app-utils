@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Utils">
         <activity
+            android:name=".MicrosoftTeamsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GoogleMeetActivity"
+            android:exported="false" />
+        <activity
             android:name=".ZoomActivity"
             android:exported="false" />
         <activity

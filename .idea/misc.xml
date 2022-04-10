@@ -3,7 +3,10 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1715" />
+        <entry key="app/src/main/res/layout/activity_google_meet.xml" value="0.22" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.25743589743589745" />
+        <entry key="app/src/main/res/layout/activity_microsoft_teams.xml" value="0.25743589743589745" />
         <entry key="app/src/main/res/layout/activity_zoom.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/item_ferramenta_google.xml" value="0.26145833333333335" />
         <entry key="app/src/main/res/layout/toolbar.xml" value="0.75" />
