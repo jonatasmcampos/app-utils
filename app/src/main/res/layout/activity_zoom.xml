@@ -4,7 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center_horizontal"
     android:orientation="vertical"
     tools:context=".ZoomActivity">
 
@@ -16,6 +15,7 @@
         android:id="@+id/ivZoomComName"
         android:layout_width="60dp"
         android:layout_height="60dp"
+        android:layout_gravity="center_horizontal"
         android:layout_marginVertical="32dp"
         android:contentDescription="Icone do zoom"
         android:src="@drawable/icon_zoom_nome" />
@@ -24,6 +24,7 @@
         android:id="@+id/tvDescricao"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:layout_marginHorizontal="16dp"
         android:text="Fornece serviços de vídeocomunicação e chat online, é usado para teleconferência, trabalho à distância, educação à distância e relações sociais."
         android:textAlignment="center"
@@ -34,21 +35,95 @@
         android:id="@+id/btnCapacitacaoZoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Capacitação Zoom" />
 
     <Button
         android:id="@+id/btnCentralAjudaZoom"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
         android:text="Central de ajuda"
         android:layout_marginBottom="32dp"/>
 
     <View
         android:id="@+id/divider"
-        android:layout_width="350dp"
+        android:layout_width="wrap_content"
         android:layout_height="1dp"
+        android:layout_marginHorizontal="16dp"
         android:layout_gravity="center_horizontal"
         android:background="?attr/colorPrimary" />
+
+    <TextView
+        android:id="@+id/tvSaibacomo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Saiba como: "
+        android:textSize="16sp"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:id="@+id/tvCriarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Criar reunião."
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_add"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/tvAgendarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Agendar reunião."
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_agendar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/tvIngressarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Ingressar em uma reunião."
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_ingressar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/tvGravarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Gravar uma reunião."
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_gravar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/tvConvidarR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Convidar pessoas para uma reunião."
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_convidar"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"/>
+
+    <TextView
+        android:id="@+id/tvControleA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Controles do anfitrião."
+        android:textSize="16sp"
+        android:drawableStart="@drawable/ic_controle"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"/>
+
+
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
