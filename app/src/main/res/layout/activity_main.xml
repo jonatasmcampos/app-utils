@@ -1,18 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar"/>
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ferramentas digitais"
+        android:textSize="16sp"
+        android:letterSpacing="0.1"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivBanner"
+        android:layout_width="wrap_content"
+        android:layout_height="220dp"
+        android:layout_marginTop="32dp"
+        android:background="?attr/colorSecondary"
+        android:src="@drawable/ferramentas_digitais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titulo"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="Aprenda e\ntire suas dúvidas."
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:letterSpacing="0.15"
+        android:layout_marginStart="32dp"
+        app:layout_constraintTop_toTopOf="@id/ivBanner"
+        app:layout_constraintBottom_toBottomOf="@id/ivBanner"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvFerramentasDigitais"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ferramentas de videoconferência"
+        android:textSize="16sp"
+        android:layout_marginTop="64dp"
+        android:layout_marginStart="16dp"
+        app:layout_constraintTop_toBottomOf="@id/ivBanner"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <!--  Imagem e texto zoom  -->
+    <ImageView
+        android:id="@+id/ivZoom"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/icon_zoom"
+        android:layout_marginStart="64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/tvZoom"
+        app:layout_constraintTop_toBottomOf="@id/tvFerramentasDigitais"/>
+    <TextView
+        android:id="@+id/tvZoom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZOOM"
+        android:layout_marginStart="32dp"
+        android:textSize="16sp"
+        android:letterSpacing="0.1"
+        app:layout_constraintStart_toEndOf="@id/ivZoom"
+        app:layout_constraintTop_toTopOf="@id/ivZoom"
+        app:layout_constraintBottom_toBottomOf="@id/ivZoom" />
+
+    <!--  Imagem e texto Google meet  -->
+    <ImageView
+        android:id="@+id/ivGmeet"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_gmeet"
+        app:layout_constraintStart_toStartOf="@id/ivZoom"
+        app:layout_constraintTop_toBottomOf="@id/ivZoom"/>
+    <TextView
+        android:id="@+id/tvGmeet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="GOOGLE MEET"
+        android:textSize="16sp"
+        android:letterSpacing="0.1"
+        app:layout_constraintStart_toStartOf="@id/tvZoom"
+        app:layout_constraintTop_toTopOf="@id/ivGmeet"
+        app:layout_constraintBottom_toBottomOf="@id/ivGmeet" />
+
+    <!--  Imagem e texto microsoft teams  -->
+    <ImageView
+        android:id="@+id/ivMteams"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/icon_mteams"
+        app:layout_constraintStart_toStartOf="@+id/ivGmeet"
+        app:layout_constraintTop_toBottomOf="@id/ivGmeet" />
+    <TextView
+        android:id="@+id/tvMteams"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="MICROSOFT TEAMS"
+        android:textSize="16sp"
+        android:letterSpacing="0.1"
+        app:layout_constraintStart_toStartOf="@id/tvZoom"
+        app:layout_constraintTop_toTopOf="@id/ivMteams"
+        app:layout_constraintBottom_toBottomOf="@id/ivMteams" />
+
+    <!--  Ferramentas google  -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ferramentas google"
+        android:textSize="16sp"
+        android:layout_marginTop="64dp"
+        app:layout_constraintTop_toBottomOf="@id/ivMteams"
+        app:layout_constraintStart_toStartOf="@id/tvFerramentasDigitais" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
