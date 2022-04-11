@@ -61,7 +61,7 @@
         android:layout_height="wrap_content"
         android:text="Saiba como: "
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginStart="16dp"/>
 
     <TextView
@@ -71,7 +71,7 @@
         android:text=" Criar reunião."
         android:textSize="16sp"
         android:drawableStart="@drawable/ic_add"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"/>
 
     <TextView
@@ -81,7 +81,7 @@
         android:text=" Agendar reunião."
         android:textSize="16sp"
         android:drawableStart="@drawable/ic_agendar"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"/>
 
     <TextView
@@ -91,7 +91,7 @@
         android:text=" Ingressar em uma reunião."
         android:textSize="16sp"
         android:drawableStart="@drawable/ic_ingressar"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"/>
 
     <TextView
@@ -101,7 +101,7 @@
         android:text=" Gravar uma reunião."
         android:textSize="16sp"
         android:drawableStart="@drawable/ic_gravar"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"/>
 
     <TextView
@@ -111,7 +111,7 @@
         android:text=" Convidar pessoas para uma reunião."
         android:textSize="16sp"
         android:drawableStart="@drawable/ic_convidar"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"/>
 
     <TextView
@@ -121,7 +121,7 @@
         android:text=" Controles do anfitrião."
         android:textSize="16sp"
         android:drawableStart="@drawable/ic_controle"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"/>
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton

@@ -15,7 +15,6 @@ public class MicrosoftTeamsActivity extends AppCompatActivity {
     }
 
     public void irParaHome(View view){
-        Intent intentHome = new Intent(this, MainActivity.class);
-        startActivity(intentHome);
+        finish();
     }
 }

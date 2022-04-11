@@ -68,7 +68,7 @@
         android:layout_height="wrap_content"
         android:text="Saiba como: "
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="32dp"
         android:layout_marginStart="16dp"/>
 
     <TextView
@@ -77,7 +77,7 @@
         android:layout_height="wrap_content"
         android:text=" Criar reunião."
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"
         app:drawableStartCompat="@drawable/ic_add" />
 
@@ -87,7 +87,7 @@
         android:layout_height="wrap_content"
         android:text=" Ingressar em uma reunião."
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"
         app:drawableStartCompat="@drawable/ic_ingressar" />
 
@@ -97,7 +97,7 @@
         android:layout_height="wrap_content"
         android:text=" Gravar uma reunião."
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"
         app:drawableStartCompat="@drawable/ic_gravar" />
 
@@ -107,7 +107,7 @@
         android:layout_height="wrap_content"
         android:text=" Convidar pessoas para uma reunião."
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"
         app:drawableStartCompat="@drawable/ic_convidar" />
 
@@ -117,7 +117,7 @@
         android:layout_height="wrap_content"
         android:text=" Compartilhar tela em uma reunião."
         android:textSize="16sp"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="20dp"
         android:layout_marginStart="32dp"
         app:drawableStartCompat="@drawable/ic_compartilhar_tela" />
 

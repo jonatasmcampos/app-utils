@@ -15,9 +15,6 @@ public class ZoomActivity extends AppCompatActivity {
     }
 
     public void irParaHome(View view){
-        Intent intentHome = new Intent(this, MainActivity.class);
-        startActivity(intentHome);
+        finish();
     }
-
-
 }
