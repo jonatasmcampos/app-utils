@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/layout/activity_google_meet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/layout/activity_microsoft_teams.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/layout/activity_zoom.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/card_border.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/card_border_recyclerview.xml" value="0.184" />
         <entry key="app/src/main/res/drawable/ic_home.xml" value="0.1715" />
