@@ -36,8 +36,9 @@
         android:id="@+id/btnInformacoesMteams"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
         android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="8dp"
+        android:onClick="btnInformacoes"
         android:text="Informações" />
 
     <Button
@@ -45,8 +46,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:text="Central de ajuda"
-        android:layout_marginBottom="32dp"/>
+        android:layout_marginBottom="32dp"
+        android:onClick="btnCentralAjudaMteams"
+        android:text="Central de ajuda" />
 
     <View
         android:id="@+id/divider"
