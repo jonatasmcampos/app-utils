@@ -83,8 +83,8 @@
 
                 <ImageView
                     android:id="@+id/ivZoom"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="Icone do zoom"
                     android:src="@drawable/icon_zoom" />
@@ -123,8 +123,8 @@
 
                 <ImageView
                     android:id="@+id/ivGmeet"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="Icone do google meet"
                     android:src="@drawable/icon_gmeet"
@@ -165,8 +165,8 @@
 
                 <ImageView
                     android:id="@+id/ivMteams"
-                    android:layout_width="60dp"
-                    android:layout_height="60dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="Icone do microsoft teams"
                     android:src="@drawable/icon_mteams" />

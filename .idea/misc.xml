@@ -3,7 +3,18 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_add.xml" value="0.1945" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_agendar.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_compartilhar_som.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_compartilhar_tela.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_controle.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_convidar.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_gravar.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_home.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_ingressar.xml" value="0.153" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/drawable/ic_launcher_foreground.xml" value="0.153" />
         <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/layout/activity_google_meet.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/layout/activity_main.xml" value="0.22" />
         <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/layout/activity_microsoft_teams.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/JonatasMCampos/AndroidStudioProjects/app-utils/app/src/main/res/layout/activity_zoom.xml" value="0.25" />
         <entry key="app/src/main/res/drawable/card_border.xml" value="0.184" />
