@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class MicrosoftTeamsActivity extends AppCompatActivity {
 
@@ -23,6 +26,10 @@ public class MicrosoftTeamsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_microsoft_teams);
+
+        ImageView imageView = findViewById(R.id.ivMteamsComName);
+
+        Glide.with(this).load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkNPDpwIzETYgFOaSEzk2b8l1SNMQKfld6kqVigBtPbe6vz0Hor9HXYpEnc-juReE5J6c&usqp=CAU").into(imageView);
     }
 
     public void irParaHome(View view){

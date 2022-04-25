@@ -14,12 +14,12 @@
 
     <ImageView
         android:id="@+id/ivMteamsComName"
-        android:layout_width="70dp"
-        android:layout_height="70dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginVertical="32dp"
         android:contentDescription="Icone do Microsoft Teams"
-        android:src="@drawable/icon_mteams_nome" />
+        />
 
     <TextView
         android:id="@+id/tvDescricaoMteams"

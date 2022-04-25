@@ -33,7 +33,6 @@
             android:layout_height="220dp"
             android:layout_marginTop="32dp"
             android:contentDescription="Imagem de fundo representando ferramentas digitais"
-            android:src="@drawable/ferramentas_digitais"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/titulo" />
@@ -87,7 +86,7 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="Icone do zoom"
-                    android:src="@drawable/icon_zoom" />
+                    />
                 <TextView
                     android:id="@+id/tvZoom"
                     android:layout_width="wrap_content"
@@ -127,7 +126,6 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="Icone do google meet"
-                    android:src="@drawable/icon_gmeet"
                     />
 
                 <TextView
@@ -169,7 +167,7 @@
                     android:layout_height="50dp"
                     android:layout_gravity="center_vertical"
                     android:contentDescription="Icone do microsoft teams"
-                    android:src="@drawable/icon_mteams" />
+                    />
 
                 <TextView
                     android:id="@+id/tvMteams"

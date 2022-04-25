@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class GoogleMeetActivity extends AppCompatActivity {
 
@@ -23,6 +26,10 @@ public class GoogleMeetActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_google_meet);
+
+        ImageView imageView = findViewById(R.id.ivGmeetComName);
+
+        Glide.with(this).load("https://atendimentosti.usp.br/otrs/public.pl?Action=PublicFAQZoom;Subaction=DownloadAttachment;ItemID=380;FileID=1518").into(imageView);
     }
 
     public void irParaHome(View view){

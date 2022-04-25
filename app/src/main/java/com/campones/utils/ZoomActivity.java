@@ -6,6 +6,9 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class ZoomActivity extends AppCompatActivity {
 
@@ -23,6 +26,10 @@ public class ZoomActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zoom);
+
+        ImageView imageView = findViewById(R.id.ivZoomComName);
+
+        Glide.with(this).load("https://vejacomofeito.com/wp-content/uploads/2021/04/1619661667_Como-alterar-o-idioma-no-aplicativo-Zoom-Exemplo.jpg").into(imageView);
     }
 
     public void irParaHome(View view){
