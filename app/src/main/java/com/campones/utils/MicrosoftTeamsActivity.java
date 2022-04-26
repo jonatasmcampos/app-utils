@@ -29,7 +29,12 @@ public class MicrosoftTeamsActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.ivMteamsComName);
 
-        Glide.with(this).load("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRkNPDpwIzETYgFOaSEzk2b8l1SNMQKfld6kqVigBtPbe6vz0Hor9HXYpEnc-juReE5J6c&usqp=CAU").into(imageView);
+        Glide
+                .with(this)
+                .load("https://cloudo3.com/resources3/images10/image-214-1009025306249.png")
+                .circleCrop()
+                .placeholder(R.drawable.ic_baseline_data_usage_24)
+                .into(imageView);
     }
 
     public void irParaHome(View view){

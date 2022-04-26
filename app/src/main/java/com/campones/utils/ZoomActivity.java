@@ -29,7 +29,11 @@ public class ZoomActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.ivZoomComName);
 
-        Glide.with(this).load("https://vejacomofeito.com/wp-content/uploads/2021/04/1619661667_Como-alterar-o-idioma-no-aplicativo-Zoom-Exemplo.jpg").into(imageView);
+        Glide.with(this)
+                .load("https://www.bubok.pt/blog/wp-content/uploads/logo.jpg")
+                .circleCrop()
+                .placeholder(R.drawable.ic_baseline_data_usage_24)
+                .into(imageView);
     }
 
     public void irParaHome(View view){

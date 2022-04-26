@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
 import com.campones.utils.models.Imagem;
 
 import java.util.ArrayList;
@@ -44,14 +45,19 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
 
-        View itemView = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_ferramenta_google, parent, false);
+        View itemView = LayoutInflater.from(parent.getContext())
+                .inflate(R.layout.item_ferramenta_google, parent, false);
         return new MyViewHolder(itemView);
     }
 
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
-        int img = listaImagem.get(position).getImagem();
-        holder.imagem.setImageResource(img);
+
+        Glide
+                .with(holder.imagem)
+                .load(listaImagem.get(position).getImagem())
+                .placeholder(R.drawable.ic_baseline_data_usage_24)
+                .into(holder.imagem);
 
         holder.imagem.setTag(position);
         holder.imagem.setOnClickListener(new View.OnClickListener() {

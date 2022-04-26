@@ -2,17 +2,17 @@ package com.campones.utils.models;
 
 public class Imagem {
 
-    private int imagem;
+    private String imagem;
 
-    public Imagem(int imagem) {
+    public Imagem(String imagem) {
         this.imagem = imagem;
     }
 
-    public int getImagem() {
+    public String getImagem() {
         return imagem;
     }
 
-    public void setImagem(int imagem) {
+    public void setImagem(String imagem) {
         this.imagem = imagem;
     }
 }

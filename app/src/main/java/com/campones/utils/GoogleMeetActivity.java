@@ -29,7 +29,12 @@ public class GoogleMeetActivity extends AppCompatActivity {
 
         ImageView imageView = findViewById(R.id.ivGmeetComName);
 
-        Glide.with(this).load("https://atendimentosti.usp.br/otrs/public.pl?Action=PublicFAQZoom;Subaction=DownloadAttachment;ItemID=380;FileID=1518").into(imageView);
+        Glide
+                .with(this)
+                .load("https://www.allion.com/wp-content/uploads/2021/09/LOGO_large-44.jpg")
+                .circleCrop()
+                .placeholder(R.drawable.ic_baseline_data_usage_24)
+                .into(imageView);
     }
 
     public void irParaHome(View view){
